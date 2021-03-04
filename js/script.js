@@ -21,7 +21,13 @@ $(document).ready(function () {
 
   // User Interface Logic
   $(document).ready(function () {
-
+    function resetFields() {
+      $("input#new-first-name").val("");
+      $("input#new-last-name").val("");
+      $("input.new-street").val("");
+      $("input.new-city").val("");
+      $("input.new-county").val("");
+    }
     $("#add-address").click(function () {
       $("#new-addresses").append('<div class="new-address">' +
         '<div class="form-group">' +
